@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: my_cool_app_production
-  username: my_cool_app
-  password: <%= ENV["TEST_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
